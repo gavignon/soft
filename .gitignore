@@ -11,7 +11,7 @@ npm-error.log
 yarn-error.log
 
 # compile source
-./lib
+.lib
 
 # test artifacts
 *xunit.xml
@@ -40,3 +40,21 @@ node_modules
 .idea
 
 oclif.manifest.json
+lib/index.d.ts
+lib/index.js
+lib/index.js.map
+lib/commands/soft/field/generate.d.ts
+lib/commands/soft/field/generate.js
+lib/commands/soft/field/generate.js.map
+lib/lib/soft/field/fieldDefinition.d.ts
+lib/lib/soft/field/fieldDefinition.js
+lib/lib/soft/field/fieldDefinition.js.map
+lib/index.d.ts
+lib/index.js
+lib/index.js.map
+lib/commands/soft/field/generate.d.ts
+lib/commands/soft/field/generate.js
+lib/commands/soft/field/generate.js.map
+lib/lib/soft/field/fieldDefinition.d.ts
+lib/lib/soft/field/fieldDefinition.js
+lib/lib/soft/field/fieldDefinition.js.map
