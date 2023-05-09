@@ -1,0 +1,34 @@
+objectName,label,fullname,type,description,inlineHelpText,FieldIsIndexed,defaultValue,required,trackHistory,externalId,unique,numeric-precision,numeric-scale,number-isAIPredictionField,lookup-referenceTo,lookup-relationshipLabel,lookup-relationshipName,lookup-deleteConstraint,autonumber-displayFormat,text-caseSensitive,text-length,text-visibleLines,encrypt-maskType,encrypt-maskChar,geo-displayLocationInDecimal,rollup-field,rollup-foreignkey,rollup-Operation,picklist-restricted,picklist-isGlobal,picklist-valueSetName,picklist-isSorted
+Passed,myAutonumber,myAutonumber__c,Autonumber,it's an autonumber,Autonumber description,,,,,,,,,,,,,,TEST-{00}
+Error,myAutonumberBad,myAutonumberBad__c,Autonumber,,Autonumber description,,,,,,,,,,,,,,
+Passed,myCheckbox,myCheckbox__c,Checkbox,it's a Checkbox,Checkbox description,,true,,,
+Passed,myCurrency,myCurrency__c,Currency,it's a Currency,Currency description,,666,,,,,6,4,,,
+Error,myCurrencyBad,myCurrency__c,Currency,it's a Currency,Currency description,,,,,,,20,12,,,
+Passed,myDate,myDate__c,Date,it's a Date,Date description,,now(),,,,,,,,,
+Passed,myDateTime,myDateTime__c,DateTime,it's a DateTime,DateTime description,,now(),,,,,,,,,,,,qdfkug
+Passed,myEmail,myEmail__c,Email,it's an Email,Email description,,test@test.fr,,,,,,,,,,,,ss,true
+Passed,myEncryptedText,myEncryptedText__c,EncryptedText,it's an EncryptedText,EncryptedText description,,test@test.fr,,,,,,,,,,,,ss,true,,,all,*
+Error,myEncryptedTextBad,myEncryptedTextBad__c,EncryptedText,,,,test@test.fr,,,,,,,,,,,,ss,true,,,everything,-
+Passed,myHtml,myHtml__c,Html,it's an Html,Html description,,test@test.fr,,,,,,,,,,,,ss,true,13000,5,,,
+Error,myHtmlBad,myHtmlBad__c,Html,it's an Html,Html description,,test@test.fr,,,,,,,,,,,,ss,true,2500000,5,,,
+Passed,myLocation,myLocation__c,Location,it's an Location,Location description,,,,,,,,44,,,,,,,,,,,,true
+Error,myLocationBad,myLocationBad__c,Location,it's an Location,Location description,,,,,,,,,,,,,,,,,,,,true
+Passed,myLookup,myLookup__c,Lookup,It's a lookup,"lookup description, pour les nuls",false,,,,,,,,refto,relationLabel,relationName,Restrict
+Error,myLookupBad,myLookupBad__c,Lookup,It's a lookup,,false,,,,,,,,,,,Total
+Passed,myLongTextArea,myLongTextArea__c,LongTextArea,it's an LongTextArea,LongTextArea description,,test@test.fr,,,,,,,,,,,,,true,13000,5,,,
+Error,myLongTextAreaBad,myLongTextAreaBad__c,LongTextArea,it's an LongTextArea,LongTextArea description,,test@test.fr,,,,,,,,,,,,,true,,,,,
+Passed,MyNumber,myNumber__c,Number,It's a number,How can I help your number?,true,,true,true,false,false,3,12,false
+Error,MyNumberBad,,Number,It's a number,,true,,true,true,false,false,,,
+Passed,MyPercent,myPercent__c,Percent,It's a Percent,How can I help your number?,true,,true,true,false,false,18,2,true
+Passed,MyPhone,myPhone__c,Phone,It's a Phone,How can I help your Phone number?,true,,true,true,false,false,18,2,true
+Passed,MySummary,mySummary__c,Summary,It's a Summary,Summary description,true,,true,true,false,false,18,2,true,,,,,,,,,,,,kloug__c.field__c,Kloug__c.Klougissimo__c,Min
+Passed,MySummaryBad,mySummaryBad__c,Summary,It's a Summary,Summary description,true,,true,true,false,false,18,2,true,,,,,,,,,,,,kloug__c.field__c,Kloug__c.Klougissimo__c,Top
+Passed,myText,myText__c,Text,,,false,default,true,,,false,,,,,,,,,false,50
+Passed,myTextArea,myTextArea__c,TextArea,Description TextArea,Help TextArea,false,default,true,,,false
+Passed,myTime,myTime__c,Time,Description Time,Help Time,false,default,true,,,false
+Passed,myUrl,myUrl__c,Url,Description Url,Help Url,false,default,true,,,false
+Passed,myPicklistGlobal,myPicklistGlobal__c,Picklist,Description Picklist Global,Help Picklist Global,false,default,true,,,false,,,,,,,,,,,,,,,,,,true,true,setName
+Passed,myPicklistLocal,myPicklistLocal__c,Picklist,Description Picklist Local,Help Picklist Local,false,default,true,,,false,,,,,,,,,,,,,,,,,,true,false,,true
+Passed,myMultiselectPicklistGlobal,myMultiselectPicklistGlobal__c,MultiselectPicklist,Description MultiselectPicklist Global,Help Picklist Global,false,default,true,,,false,,,,,,,,,,,3,,,,,,,true,true,setName
+Passed,myMultiselectPicklistLocal,myMultiselectPicklistLocal__c,MultiselectPicklist,,Help Picklist Local,false,default,true,,,false,,,,,,,,,,,3,,,,,,,true,false,,true
+Error,myUnknown,myUnknown__c,unknown,Unknown description,unknown help
